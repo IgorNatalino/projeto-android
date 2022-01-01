@@ -28,6 +28,14 @@ header{
     box-shadow: 0px 0px 10px 2px var(--shadow);
     
 }
+
+header > p{
+    text-align: center;
+    text-indent: 0em;
+    padding: 0px 0px 20px 0px;
+    margin: 0px;
+}
+
 .title{
     font-family: var(--fonte-especial);
     font-weight: normal;
@@ -39,24 +47,25 @@ nav{
     text-decoration: none;
     text-align: left;
     font-weight: bold;
+    padding-bottom: 8px;
 }
 nav > a{
-    margin-right: 15px;
+    padding: 3.75px 7.5px 3.75px 7.5px;
     text-decoration: none;
     color: white;
 }    
 
 nav > a:hover{
-    padding: 6px;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
     background-color: var(--cor3);
 }   
+
 main{
     background-color: rgb(255, 255, 255);
     padding: 20px;
     box-shadow: 0px 0px 10px 2px var(--shadow);
     text-align: justify;
-    min-width: 320px;
+    min-width: 260px;
     max-width: 1000px;
     margin: 0px 200px;
     border-radius: 0px 0px 10px 10px;
@@ -83,6 +92,7 @@ p{
     line-height: 1.5;
     text-indent: 30px;
 }
+
 a{
     text-decoration: none;
 }
@@ -123,7 +133,8 @@ img{
     height: 91%;
 }
 .bugdroid{
-    max-width: 35%;
+    width: 45%;
+    min-width: 250px;
 }
 .extra1{
     background-color: var(--cor4);
@@ -144,6 +155,11 @@ img{
 ul{
     list-style:none;
     columns: 2;
+    padding: 0em;
+    justify-content: center;
+}
+li{
+    line-height: 1.8em;
 }
 li:before {
     content: "✔";
